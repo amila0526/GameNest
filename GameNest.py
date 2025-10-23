@@ -1,21 +1,4 @@
 """
-GameNest - simple game launcher (updated with recursive Unity helper exe filter)
-Features implemented:
- - PyQt5 GUI with sidebar showing added games (icon + name)
- - "+" button with menu: Detect Already Existing Games, Add Game Manually
- - "Detect" scans default folders + user-configurable custom folders
- - Recursive search inside each folder to find executables (.exe)
- - Stronger detection order with full recursive Unity helper exe filter:
-      1. Executable name contains folder name
-      2. 'Launcher' in filename
-      3. Ignore known Unity helper executables (UnityCrashHandler, *_Data, *_x64)
-      4. Fallback to first remaining .exe
- - "Add Manually" opens a file dialog for user to pick an .exe and adds it
- - Click a game in the sidebar to see details and a "Launch" button
- - Saves games and custom folders to games.json so the list persists
- - Windows UAC prompt for admin privileges when detecting games
- - Settings tab for custom scan folders and reset games list
-
 Requirements:
  pip install PyQt5
  pip install pywin32
@@ -1000,4 +983,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
